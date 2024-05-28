@@ -6,7 +6,7 @@ function Mesero({ user }) {
     const [productos, setProductos] = useState([]);
     const [mesaSeleccionada, setMesaSeleccionada] = useState("");
     const [cantidad, setCantidad] = useState(1);
-    const ruta = 'http://localhost:4000/v1/';
+    const ruta = 'https://restaurante-front-theta.vercel.app/';
     const [productosSeleccionados, setProductosSeleccionados] = useState([]);
     const [meseroSeleccionado, setMeseroSeleccionado] = useState('');
     const [meseros, setMeseros] = useState([]); // Inicializar meseros como un array vacío

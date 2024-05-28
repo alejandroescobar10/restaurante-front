@@ -13,7 +13,7 @@ const AdminPanel = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:4000/v1/productos/agregarProducto', {
+      const response = await fetch('https://restaurante-front-theta.vercel.app/v1/productos/agregarProducto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

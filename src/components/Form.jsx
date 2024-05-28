@@ -11,7 +11,7 @@ function Form({ callback }) {
     const validateUser = (event) => {
         event.preventDefault();
         
-        fetch(`http://localhost:4000/v1/user/login`, {
+        fetch(`https://restaurante-front-theta.vercel.app/v1/user/login`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password})

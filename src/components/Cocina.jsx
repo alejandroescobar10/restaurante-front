@@ -11,14 +11,14 @@ function Cocina() {
     };
 
     useEffect(() => {
-        fetch('http://localhost:4000/v1/pedido/listarPedidos')
+        fetch('https://restaurante-front-theta.vercel.app/v1/pedido/listarPedidos')
             .then(response => response.json())
             .then(data => setPedidos(data))
             .catch(error => console.error('Error al obtener los pedidos:', error));
     }, []);
 
     const handleCambiarEstado = (pedidoId) => {
-        fetch(`http://localhost:4000/v1/pedido/cambiarEstadoPedido/${pedidoId}`, {
+        fetch(`https://restaurante-front-theta.vercel.app/v1/pedido/cambiarEstadoPedido/${pedidoId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
