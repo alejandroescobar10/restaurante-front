@@ -1,13 +1,13 @@
 import './App.css';
 
-import Form from './src/components/Form';
+import Form from './components/Form';
 //import UserHome from './components/UserHome';
 //import AdminHome from './components/AdminHome';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
 import { useState } from 'react';
-import Admin from './src/components/Admin';
-import Mesero from './src/components/mesero';
-import Cocina from './src/components/cocina';
+import Admin from './components/Admin';
+import Mesero from './components/Mesero';
+import Cocina from './components/Cocina';
 
 function App() {
   const [user, setUser] = useState(null);
