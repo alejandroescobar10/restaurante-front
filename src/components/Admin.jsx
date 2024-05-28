@@ -47,7 +47,7 @@ const AdminPanel = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:4000/v1/user/agregarUsuario', {
+      const response = await fetch('https://restaurante-back-psi.vercel.app/v1/user/agregarUsuario', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ const AdminPanel = () => {
   useEffect(() => {
     const listarVentas = async () => {
       try {
-        const response = await fetch('http://localhost:4000/v1/pedido/listarPedidos');
+        const response = await fetch('https://restaurante-back-psi.vercel.app/v1/pedido/listarPedidos');
         if (!response.ok) {
           throw new Error('Error al obtener la lista de ventas');
         }
