@@ -5,9 +5,9 @@ import Form from './src/components/Form';
 //import AdminHome from './components/AdminHome';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
 import { useState } from 'react';
-import Admin from './components/Admin';
-import Mesero from './components/mesero';
-import Cocina from './components/cocina';
+import Admin from './src/components/Admin';
+import Mesero from './src/components/mesero';
+import Cocina from './src/components/cocina';
 
 function App() {
   const [user, setUser] = useState(null);
